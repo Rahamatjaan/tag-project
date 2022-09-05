@@ -1,0 +1,14 @@
+- name: Ensure Apache is deployed
+  hosts: dev
+  tasks:
+    - name: first tag task
+      copy:
+        content: "Hello"
+        dest: /var/www/html/index.html
+
+    - mame: second tag task
+      copy:
+        content: "By By"
+        dest: /var/www/html/index.html
+
+
